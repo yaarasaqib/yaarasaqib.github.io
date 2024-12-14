@@ -10,11 +10,15 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background: linear-gradient(to bottom right, #f0f4f8, #d9e8f6);
+      color: #333;
     }
 
     header {
       text-align: center;
       padding: 20px;
+      background-color: #007BFF;
+      color: white;
     }
 
     header img {
@@ -42,7 +46,7 @@
 
     .main-menu a {
       text-decoration: none;
-      color: #007BFF;
+      color: white;
       font-weight: bold;
     }
 
@@ -52,6 +56,11 @@
 
     .content-region {
       display: none; /* Hidden by default */
+      background: white;
+      padding: 20px;
+      margin: 10px auto;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .content-region.active {
@@ -61,13 +70,48 @@
     footer {
       text-align: center;
       padding: 10px;
-      background-color: #f8f9fa;
+      background-color: #007BFF;
+      color: white;
       border-top: 1px solid #ddd;
       margin-top: 20px;
     }
 
     footer p {
       margin: 0;
+    }
+
+    .floating-update {
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      animation: slide-in 2s ease-in-out;
+    }
+
+    @keyframes slide-in {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
@@ -89,7 +133,54 @@
       <!-- Home Section -->
       <div id="home" class="content-region active">
         <h2>Home</h2>
-        <p>This is my professional website.</p>
+        <p>Welcome to my professional website. Here you can find updates about my work, research, certifications, and more!</p>
+        
+        <div>
+          <h3>Updates</h3>
+          <div class="floating-update">
+            <p><strong>Latest Update:</strong></p>
+            <p>New Research Project started on [Date].</p>
+            <p>Stay tuned for details!</p>
+          </div>
+        </div>
+
+        <h3>Research Projects</h3>
+        <ul>
+          <li>
+            <strong>Project Title:</strong> Machine Learning for Climate Predictions<br>
+            <strong>Date:</strong> Jan 2024 - Dec 2024<br>
+            <strong>Description:</strong> Application of supervised models for climate forecasting.<br>
+            <strong>Guide:</strong> Dr. XYZ<br>
+          </li>
+          <li>
+            <strong>Project Title:</strong> Statistical Modeling for Genomics<br>
+            <strong>Date:</strong> Mar 2023 - Dec 2023<br>
+            <strong>Description:</strong> Differential analysis of gene expressions under stress.<br>
+            <strong>Guide:</strong> Dr. ABC<br>
+          </li>
+        </ul>
+
+        <h3>Certifications</h3>
+        <ul>
+          <li><a href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank">Google Data Analytics Professional Certificate</a></li>
+          <li><a href="https://www.datacamp.com/courses/python-data-science-track" target="_blank">DataCamp: Python Data Science Track</a></li>
+          <li><a href="https://www.kaggle.com/learn" target="_blank">Kaggle: Data Visualization and Machine Learning</a></li>
+        </ul>
+
+        <h3>Courses List</h3>
+        <ul>
+          <li>Advanced Statistical Inference</li>
+          <li>Machine Learning and Data Mining</li>
+          <li>Programming with Python and R</li>
+          <li>Big Data Technologies</li>
+        </ul>
+
+        <h3>Academic Details</h3>
+        <ul>
+          <li><strong>Master's Degree:</strong> M.Sc. in Statistics, IIT Kanpur</li>
+          <li><strong>Bachelor's Degree:</strong> B.Sc. in Mathematics, AMU</li>
+          <li><strong>Key Achievements:</strong> Secured All India Rank in IIT JAM.</li>
+        </ul>
       </div>
       
       <!-- About Section -->
@@ -99,10 +190,7 @@
           With a passion for statistics and data science, I am pursuing a master's degree in statistics at IIT Kanpur, one of the most prestigious institutes in India. I have also acquired multiple certifications demonstrating my versatility and eagerness to learn new skills.
         </p>
         <p>
-          Alongside my studies, I worked as a Data Science Intern at Meritshot, a startup that provides expertise in data science and other related courses. There, I applied my programming skills and statistical knowledge to analyze data and create reports and dashboards. Additionally, I am a Video SME, creating video-based solutions for statistical problems for a diverse clientele. I have over four years of experience in teaching mathematics, science, and English to secondary school students, as well as in sales and merchandising roles. These experiences have enhanced my communication, writing, and pedagogy skills, as well as my ability to work with different audiences and stakeholders.
-        </p>
-        <p>
-          Beyond my academic and professional pursuits, I am an ardent writer and have a keen eye for aesthetics. I enjoy exploring topics related to human psychology, comparative religion, and theology. I am always eager to seize new opportunities and embrace fresh challenges with enthusiasm and curiosity. My goal is to become a proficient and innovative data scientist who can contribute to the advancement of data-driven decision-making and problem-solving.
+          Alongside my studies, I worked as a Data Science Intern at Meritshot, a startup that provides expertise in data science and other related courses. There, I applied my programming skills and statistical knowledge to analyze data and create reports and dashboards. Additionally, I am a Video SME, creating video-based solutions for statistical problems for a diverse clientele.
         </p>
       </div>
 
@@ -120,7 +208,7 @@
   </div>
 
   <footer>
-    <p>Footer region</p>
+    <p>&copy; 2024 Mohammad Saqib Ansari</p>
   </footer>
 
   <script>
