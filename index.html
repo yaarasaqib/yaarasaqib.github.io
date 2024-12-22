@@ -279,12 +279,12 @@
     </div>
   </div>
 
-   <!-- Work Experience -->
-<div id="work" class="content-region" style="font-family: 'Arial', sans-serif; max-width: 800px; margin: 0 auto; color: #333;">
-  <h2 style="text-align: center; font-size: 2em; margin-bottom: 20px;">Work Experience</h2>
-  <ul style="list-style: none; padding: 0; margin: 0;">
+    <!-- Work Experience -->
+      <div id="work" class="content-region" style="font-family: 'Arial', sans-serif; max-width: 800px; margin: 0 auto; color: #333;">
+      <h2 style="text-align: center; font-size: 2em; margin-bottom: 20px;">Work Experience</h2>
+      <ul style="list-style: none; padding: 0; margin: 0;">
     <!-- Job 1 -->
-    <li style="margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; position: relative;">
+    <li style="margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; position: relative; cursor: pointer;">
       <div style="display: flex; justify-content: space-between; align-items: center;">
         <strong style="font-size: 1.2em;">Associate Data Scientist</strong>
         <span style="font-size: 0.9em; color: #666;">(July 2024 - Present)</span>
@@ -296,7 +296,7 @@
     </li>
 
     <!-- Job 2 -->
-    <li style="margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; position: relative;">
+    <li style="margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; position: relative; cursor: pointer;">
       <div style="display: flex; justify-content: space-between; align-items: center;">
         <strong style="font-size: 1.2em;">Data Science Intern</strong>
         <span style="font-size: 0.9em; color: #666;">(Sep 2023 - Dec 2023)</span>
@@ -308,7 +308,7 @@
     </li>
 
     <!-- Job 3 -->
-    <li style="margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; position: relative;">
+    <li style="margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; position: relative; cursor: pointer;">
       <div style="display: flex; justify-content: space-between; align-items: center;">
         <strong style="font-size: 1.2em;">Data Science Freelancer</strong>
         <span style="font-size: 0.9em; color: #666;">(Oct 2022 - Dec 2024)</span>
@@ -323,38 +323,20 @@
 <script>
   // Toggle visibility of job descriptions
   document.querySelectorAll('li').forEach(item => {
-    item.addEventListener('click', () => {
-      const description = item.querySelector('.description');
-      description.style.display = description.style.display === 'none' ? 'block' : 'none';
-    });
-  });
-</script>
+    item.addEventListener('click', (e) => {
+      // Prevent toggling parent elements when nested items are clicked
+      if (e.target.tagName !== "LI" && e.target.tagName !== "DIV") return;
 
-<script>
-  // Toggle visibility of job descriptions
-  document.querySelectorAll('li').forEach(item => {
-    item.addEventListener('click', () => {
       const description = item.querySelector('.description');
-      if (description.style.display === "none") {
-        description.style.display = "block";
+      if (description.style.display === 'none' || description.style.display === '') {
+        description.style.display = 'block';
       } else {
-        description.style.display = "none";
+        description.style.display = 'none';
       }
     });
   });
 </script>
 
-
-<script>
-  function toggleDescription(id) {
-    const description = document.getElementById(id);
-    if (description.style.display === "none") {
-      description.style.display = "block";
-    } else {
-      description.style.display = "none";
-    }
-  }
-</script>
 
 
   <footer>
