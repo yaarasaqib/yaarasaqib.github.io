@@ -40,7 +40,7 @@ h4,
 h5,
 h6 {
   line-height: 1;
-  text-rendering: optimizeLegibility; /*  voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
+  text-rendering: optimizeLegibility; /* voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
@@ -137,5 +137,25 @@ ul.main-menu li a.active {
   display:block;
 }
 
+/* About Section - New styles */
+#about {
+  max-width: 800px; /* Adjust width to fit content */
+  margin: 0 auto; /* Center the About section */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
 
+#about h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
 
+#about p {
+  font-size: 1.6rem; /* Adjust paragraph font size */
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #333333; /* Darker text for better readability */
+}
