@@ -280,20 +280,52 @@
   </div>
 
    <!-- Work Experience -->
-<div id="work" class="content-region">
-  <h2>Work Experience</h2>
-  <ul>
-    <li>
-      <strong>Associate Data Scientist</strong> - ICICI Lombard 
-      <span>(July 2024 - Present)</span>
-      <button onclick="toggleDescription('job1')">Show More</button>
-      <p id="job1" style="display: none;">
-        Description: In this role, I analyze complex datasets to provide actionable insights. 
-        Responsibilities include building predictive models, conducting data analysis, and collaborating with cross-functional teams to optimize business strategies.
-      </p>
-    </li>
-  </ul>
-</div>
+    <div id="work" class="content-region">
+      <h2>Work Experience</h2>
+        <ul style="list-style: none; padding: 0;">
+          <!-- Job 1 -->
+          <li style="margin-bottom: 20px; position: relative;">
+            <strong>Associate Data Scientist</strong> - ICICI Lombard
+            <span style="position: absolute; right: 0;">(July 2024 - Present)</span>
+            <div class="description" style="display: none; margin-top: 5px;">
+              <p>In this role, I analyze complex datasets to provide actionable insights. Responsibilities include building predictive models, conducting data analysis, and collaborating with cross-functional teams to optimize business strategies.</p>
+            </div>
+          </li>
+
+          <!-- Job 2 -->
+          <li style="margin-bottom: 20px; position: relative;">
+            <strong>Intern Data Analyst</strong> - ABC Corporation
+            <span style="position: absolute; right: 0;">(Jan 2023 - June 2024)</span>
+            <div class="description" style="display: none; margin-top: 5px;">
+              <p>Assisted in developing dashboards and visualizations for tracking KPIs. Conducted data cleaning and exploratory analysis for business intelligence purposes.</p>
+            </div>
+          </li>
+
+          <!-- Job 3 -->
+          <li style="margin-bottom: 20px; position: relative;">
+            <strong>Research Assistant</strong> - XYZ University
+            <span style="position: absolute; right: 0;">(July 2021 - Dec 2022)</span>
+            <div class="description" style="display: none; margin-top: 5px;">
+              <p>Conducted statistical analysis on experimental data related to agricultural research. Published findings in peer-reviewed journals and presented results at international conferences.</p>
+            </div>
+          </li>
+        </ul>
+  </div>
+
+<script>
+  // Toggle visibility of job descriptions
+  document.querySelectorAll('li').forEach(item => {
+    item.addEventListener('click', () => {
+      const description = item.querySelector('.description');
+      if (description.style.display === "none") {
+        description.style.display = "block";
+      } else {
+        description.style.display = "none";
+      }
+    });
+  });
+</script>
+
 
 <script>
   function toggleDescription(id) {
