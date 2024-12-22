@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammad Saqib Ansari</title>
   <style>
-    /* Add some basic styling for better presentation */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -22,7 +21,7 @@
     }
 
     header img {
-      width: 150px; /* Adjust the image size */
+      width: 150px;
       height: auto;
       border-radius: 50%;
     }
@@ -32,7 +31,7 @@
     }
 
     .main-menu {
-      list-style-type: none;
+      list-style: none;
       padding: 0;
       margin: 20px 0;
       display: flex;
@@ -55,7 +54,7 @@
     }
 
     .content-region {
-      display: none; /* Hidden by default */
+      display: none;
       background: white;
       padding: 20px;
       margin: 10px auto;
@@ -64,7 +63,7 @@
     }
 
     .content-region.active {
-      display: block; /* Only show active content */
+      display: block;
     }
 
     footer {
@@ -78,27 +77,6 @@
 
     footer p {
       margin: 0;
-    }
-
-    .floating-update {
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      background-color: #007BFF;
-      color: white;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-      animation: slide-in 2s ease-in-out;
-    }
-
-    @keyframes slide-in {
-      from {
-        transform: translateX(100%);
-      }
-      to {
-        transform: translateX(0);
-      }
     }
 
     a {
@@ -116,164 +94,69 @@
   </style>
 </head>
 <body>
-
   <header id="header">
     <img src="Saqib_LinkedIn.jpg" alt="Profile Picture">
     <h1>Mohammad Saqib Ansari</h1>
-    <!-- Menu links -->
     <ul class="main-menu">
       <li><a href="#home" onclick="showContent('home')">Home</a></li>
       <li><a href="#about" onclick="showContent('about')">About</a></li>
+      <li><a href="#work" onclick="showContent('work')">Work Experience</a></li>
       <li><a href="#contact" onclick="showContent('contact')">Contact</a></li>
     </ul>
   </header>
 
   <div id="container">
     <div id="content">
+
       <!-- Home Section -->
       <div id="home" class="content-region active">
-        <h2>Home</h2>
+        <h2>Welcome</h2>
         <p>Welcome to my professional website. Here you can find updates about my work, research, certifications, and more!</p>
-        
-        <div>
-          <h3>Updates</h3>
-          <div class="floating-update">
-            <p><strong>Latest Update:</strong></p>
-            <p>New Project started on [Date].</p>
-            <p>Stay tuned for details!</p>
-          </div>
-        </div>
-        
-        <h3>Projects</h3> 
+
+        <h3>Latest Updates</h3>
         <ul>
-         <li>
-              <strong>Project Title:</strong> Reproducing Research Paper on Outlier Detection in General Spatial Models <span style="float:right;">(Nov-Dec'2023)</span><br>
-              <strong>Mentor:</strong> <a href="https://www.linkedin.com/in/arnab-hazra-a1a96870/" target="_blank">Dr. Arnab Hazra</a>, Department of Mathematics and Statistics, IIT Kanpur<br><br>
-              <strong>Contributor:</strong> <a href=https://www.linkedin.com/in/shailza-sharma-5282b2122/" target="_blank">Shailza Sharma</a><br><br>
-              <strong>Description:</strong><br>
-              This project involved reproducing the research paper "Outlier Detection and Accommodation in General Spatial Models" by Xiaowen Dai, Libin Jin, Anqi Shi, and Lei Shi. The paper focuses on detecting and accommodating outliers in spatial autoregressive models and spatial error models using mean-shift and variance-weight methodologies. Key contributions include deriving test statistics for multiple outliers, proposing detection procedures, and defining diagnostic measures like standardized residuals and leverage. The project included implementing and testing these methods through simulations and real-world examples to validate their effectiveness.
-          </li>
-          
-          <li>
-            <strong>Project Title:</strong> Predictive Time Series Analysis and Model Comparison <span style="float:right;">(Aug-Nov'2023)</span><br>
-            <strong>Mentor:</strong> <a href="https://www.linkedin.com/in/amit-mitra-426b304/" target="_blank"> Dr Amit Mitra</a>, Department of Mathematics and Statistics, IIT Kanpur.<br><br>
-            <strong>Contributor:</strong> Vikram Kumar, Sudesh Yadav, Sonali Saren <br><br>
-            <strong>Description:</strong><br>
-            After conducting various checks including missing value imputation, assessing trends and seasonality, and estimating time series components, we proceeded to fit both classical ARIMA models and LSTM models for comparison. Finally, we employed a long strangle trading strategy to culminate our analysis.<br><br>
-          </li>
-          
-         <li>
-            <strong>Project Title:</strong> 4P Analysis of Paper Boat Company <span style="float:right;">(Jun'2023)</span><br>
-            <strong>Mentor:</strong> <a href="https://www.linkedin.com/in/amit-shukla-5b614854/" target="_blank">Prof. (Dr.) Amit Shukla</a>, Department of Industrial Management and Engineering<br><br>
-            <strong>Contributor:</strong> Pravin Raman Bharti, Sudesh Kumari, Surbhi Gari, Subhadra Kumari, Shem Basumatry, Ayush Rawat<br><br>
-            <strong>Description:</strong><br>
-            As part of a mini project, I conducted a concise 4P analysis of Paper Boat Company, a leading beverage brand specializing in traditional Indian flavors. The analysis focused on Product, Price, Place, and Promotion strategies. Through this project, I gained valuable insights into their marketing approach, product differentiation, pricing strategies, distribution channels, and promotional efforts. This experience enhanced my understanding of market dynamics and marketing strategies in the beverage industry.<br><br>
-            <strong>Video:</strong> <a href="https://www.youtube.com/watch?v=hkWaiwMPNxA" target="_blank">Watch on YouTube</a> (Script and voiceover by me)<br><br>
-          </li>
-
-          <li>
-            <strong>Project Title:</strong> Data Visualization of Pharmaceutical Companies <span style="float:right;">(Oct-Nov'2022)</span><br>
-            <strong>Mentor:</strong> <a href="https://www.linkedin.com/in/dootika-vats-13223b140/" target="_blank">Dr. Dootika Vats</a>, Department of Mathematics and Statistics, IIT Kanpur.<br><br>
-            <strong>Contributor:</strong> <a href="https://www.linkedin.com/in/debarghya-jana-b62081189/" target="_blank">Debarghya Jana</a>, <a href="https://www.linkedin.com/in/suchandra-sasmal-343aa3179/" target="_blank">Suchandra Sasmal</a><br><br>
-            <strong>Description:</strong><br>
-            Leveraged web scraping tools such as rvest and R programming to extract comprehensive data from pharmaceutical companies. Conducted thorough data preparation and cleansing to ensure accuracy and reliability. Developed an interactive Shiny app that provides insightful visualizations and analysis of the pharmaceutical sector and its growth trends. Showcased the ability to apply advanced data analysis techniques to draw meaningful conclusions from complex datasets.<br><br>
-          </li>
-
-
-
-        <h3>Certifications</h3>
-        <ul>
-          <li><a href="https://coursera.org/share/114ca6fe5386f738c3060256664aa175" target="_blank">LangChain: Application Development Essentials</a></li>
-          <li><a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI0MzM4IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvNzYwMTI2Nl8zMTU2MjU4MTczMjY0MjgwNTAzNi5wbmciLCJ1c2VybmFtZSI6Ik1vaGFtbWFkIFNhcWliIEFuc2FyaSJ9&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F7296%2FChatGPT-Advanced-Course%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1117294017516301139&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVjwx3Ky9N9y0M9E%2ByrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAN8ReBxBAAAA" target="_blank">ChatGPT Advanced Course</a></li>
-          <li><a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI5MzIiLCJjZXJ0aWZpY2F0ZV91cmwiOiJodHRwczpcL1wvY2VydGlmaWNhdGVzLnNpbXBsaWNkbi5uZXRcL3NoYXJlXC83NTM0Mzg4XzMxNTYyNTgxNzMxMDAxMTgxOTU1LnBuZyIsInVzZXJuYW1lIjoiTW9oYW1tYWQgU2FxaWIgQW5zYXJpIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F3667%2FIntroduction-to-Artificial-Intelligence%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1117294017516301139&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVN%2FM3zQz3rgzJ9k%2ByrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDACPPNMVBAAAA" target="_blank">Introduction to Artificial Intelligence</a></li>
-          <li><a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI0MjgzIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfNzQ5NTQ5NV8xNzMwMDE4MTIzLnBuZyIsInVzZXJuYW1lIjoiTW9oYW1tYWQgU2FxaWIgQW5zYXJpIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F7216%2FIntroduction-to-Prompt-Engineering%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1117294017516301139&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FV962qyHIp9zQw9EuyrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAF4dkLxBAAAA" target="_blank">Introduction to Prompt Engineering</a></li>
-          <li><a href="https://coursera.org/verify/UQV3JN5SLY6C" target="_blank">Introduction to Psychology - Yale University</a></li>
-          <li><a href="https://www.linkedin.com/learning/certificates/4fb24e34796e2d18a73f4e413afed7db556351e21bf7e5c6c0a5d5f4a7096782" target="_blank">Machine Learning with Python: Foundations</a></li>
-          <li><a href="https://www.linkedin.com/learning/certificates/67990f41cf39fa28a5b831fa1a0487d53e14584250ff89e36c72ec3851d50724" target="_blank">What Is Generative AI?</a></li>
-          <li><a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIyNDE4IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfNDQ2NTA0M18xNjkyNTczMDI5LnBuZyIsInVzZXJuYW1lIjoiTW9oYW1tYWQgU2FxaWIgQW5zYXJpIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F5068%2FIntroduction-to-Basics-of-Finance%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1117294017516301139&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVd8yxSMlyTfQodE6yrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAEGNMXFBAAAA" target="_blank">Introduction to Basics of Finance</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/verify/A5DFENU7RMG3?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank">Supervised Machine Learning: Regression and Classification (Stanford)</a></li>
-          <li><a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIyNDk3IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfNDA1MjExNV8xNjcyMzc2MDg2LnBuZyIsInVzZXJuYW1lIjoiTW9oYW1tYWQgU2FxaWIgQW5zYXJpIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F5185%2FIntroduction-to-Data-Mining-Course%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1117294017516301139&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVd3f1jbA0NvFILE%2ByrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAMSc5ERBAAAA" target="_blank">Introduction to Data Mining</a></li>
-          <li><a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxOTExIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfMzk2MzAwNV8xNjY5MzczNzg2LnBuZyIsInVzZXJuYW1lIjoiTW9oYW1tYWQgU2FxaWIgQW5zYXJpIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F4496%2FIntroduction-to-HTML%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1117294017516301139&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVd6n0zfH1TTdKLUuyrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAGcAOANBAAAA" target="_blank">Introduction to HTML</a></li>
-          <li><a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxNzUyIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfMzgxOTE1OV8xNjY0NjQ0NzMwLnBuZyIsInVzZXJuYW1lIjoiTW9oYW1tYWQgU2FxaWIgQW5zYXJpIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F4242%2FPython-Libraries-for-Data-Science%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1117294017516301139&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVLym0cPQoL072LUmyrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAL5rujNBAAAA" target="_blank">Python Libraries for Data Science</a></li>
-          <li><a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxOTQyIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfMzg1NzUyNl8xNjY1ODgyNjg5LnBuZyIsInVzZXJuYW1lIjoiTW9oYW1tYWQgU2FxaWIgQW5zYXJpIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F4523%2FTime-Series-Analysis-for-Beginners%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1117294017516301139&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVd8sIMvOIyIy0LEmyrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAAofBsFBAAAA" target="_blank">Time Series Analysis</a></li>
-          <li><a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxNzI2IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfMzc1MTc2OF8xNjYyNTE2MTI3LnBuZyIsInVzZXJuYW1lIjoiTW9oYW1tYWQgU2FxaWIgQW5zYXJpIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F4217%2FR-Programming-for-Beginners%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1117294017516301139&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVz4kMCTfzcMs0L06yrytKTUstKsrMS49PKsovL04tsvUBqkpN8cwDAJhH4fFBAAAA" target="_blank">R Programming for Beginners</a></li>
-          <li><a href="https://trainings.internshala.com/view_certificate/54B6DA5D-BD04-4D7F-2C36-BC44750EC228/C2BA96CE-6626-9ACE-5627-AC606CA479CD/" target="_blank">Machine Learning</a></li>
-          <li><a href="https://drive.google.com/file/d/1GO9hoSNJ1YZCIeaM5_lUneOVyBGyrHy3/view?usp=drive_link" target="_blank">Statistics and Its Application - Uttar Pradesh Rajarshi Tandon Open University</a></li>
-          <li><a href="https://drive.google.com/file/d/1FB-X9GM6KxQoUMabGJRPLxna7Mg6mf2C/view" target="_blank">Techno-Managerial Skill Development Program - United Institute of Management</a></li>
-          <li><a href="https://drive.google.com/file/d/1GE3TwF4KyVqfhCTl2otu7q_zkWFx7V__/view?usp=drive_link" target="_blank">Office Assistant - MEPSC</a></li>
-          <li>Course on Computer Concept (CCC) - NIELIT </li>
-          <li>Maulvi Examination - U.P. Board of Madrasa Education Lucknow</li>
-
+          <li><strong>December 2024:</strong> Started a new project on machine learning for financial risk assessment.</li>
+          <li><strong>November 2024:</strong> Published a blog on my transition from academia to corporate life.</li>
         </ul>
-      
-        <h3>Courses List</h3>
-        <ul>
-          <li>Complex Analysis (MTH434A) - IIT Kanpur</li>
-          <li>Data Science Lab 1 (MTH208A) - IIT Kanpur</li>
-          <li>Data Science Lab 2 (MTH209A) - IIT Kanpur</li>
-          <li>Data Science Lab 3 (MTH312A) - IIT Kanpur</li>
-          <li>Econometrics-1 (ECO341A) - IIT Kanpur</li>
-          <li>Elementary Stochastic Process 1 (MTH212A) - IIT Kanpur</li>
-          <li>Elementary Stochastic Process 2 (MTH313A) - IIT Kanpur</li>
-          <li>English Language and Communication (ELC112A) - IIT Kanpur</li>
-          <li>Inference 1 (MTH418A) - IIT Kanpur</li>
-          <li>Inference 2 (MTH515A) - IIT Kanpur</li>
-          <li>Introduction to Bayesian Analysis (MTH422A) - IIT Kanpur</li>
-          <li>Introduction to Critical Thinking (PHI147A) - IIT Kanpur</li>
-          <li>Introduction to Machine Learning (CS771) - IIT Kanpur</li>
-          <li>Introduction to Probability Theory (MSO205A) - IIT Kanpur</li>
-          <li>Introduction to Sampling Theory (MTH432A) - IIT Kanpur</li>
-          <li>Linear and Nonlinear Models (MTH689) - IIT Kanpur</li>
-          <li>Marketing Management (MBA631A) - IIT Kanpur</li>
-          <li>Matrix Algebra and Linear Estimation - Module 1 (MTH206A) - IIT Kanpur</li>
-          <li>Matrix Algebra and Linear Estimation - Module 2 (MTH207A) - IIT Kanpur</li>
-          <li>Multivariate Analysis (MTH314A) - IIT Kanpur</li>
-          <li>Nonparametric Inference (MTH516A) - IIT Kanpur</li>
-          <li>Probability Theory (MTH309A) - IIT Kanpur</li>
-          <li>Real Analysis (MTH433A) - IIT Kanpur</li>
-          <li>Spatial Statistics (MTH643A) - IIT Kanpur</li>
-          <li>Statistical Computing (MTH210A) - IIT Kanpur</li>
-       </ul>
-  
-      <h3>Academic Details</h3>
-      <ul>
-        <li><strong>Master's Degree:</strong> M.Sc. in Statistics, IIT Kanpur</li>
-        <li><strong>Bachelor's Degree:</strong> B.Sc. Mathematics, Statistics and Physics, Ewing Christian College</li>
-        <li><strong>Key Achievements:</strong>
+      </div>
+
+      <!-- About Section -->
+      <div id="about" class="content-region">
+        <h2>About Me</h2>
+        <p>I am currently an Associate Data Scientist at ICICI Lombard, with a passion for data-driven solutions and research. I hold a master's degree in statistics from IIT Kanpur and ranked AIR 51 in GATE Statistics 2024.</p>
+        <p>Beyond my professional pursuits, I enjoy exploring topics related to psychology, comparative religion, and writing.</p>
+      </div>
+
+      <!-- Work Experience Section -->
+      <div id="work" class="content-region">
+        <h2>Work Experience</h2>
+        <div>
+          <h3>Associate Data Scientist - ICICI Lombard</h3>
+          <p><strong>Duration:</strong> Aug 2024 - Present</p>
+          <p><strong>Key Responsibilities:</strong></p>
           <ul>
-            <li>Secured All India Rank 51 in GATE Statistics-2024.</li>
-            <li>Secured All India Rank 154 in IIT JAM- Statistics 2022.</li>
+            <li>Developing predictive models for customer segmentation.</li>
+            <li>Performing exploratory data analysis to identify business opportunities.</li>
           </ul>
-        </li>
-      </ul>
+        </div>
 
-    </div>
-      
-     <!-- About Section -->
-    <div id="about" class="content-region">
-      <h2>About</h2>
-      <p>
-        Saqib Ansari is currently working as an Associate Data Scientist at ICICI Lombard. With a passion for statistics and data science, he completed a master's degree in statistics from IIT Kanpur. He qualified for GATE Statistics 2024 with an All India Rank (AIR) of 51 and has acquired multiple certifications, showcasing his versatility and eagerness to learn new skills.
-      </p>
-      <p>
-        Alongside his studies, he has worked as a Data Science Intern at Meritshot, a Video SME at W2C, where he created video-based solutions for statistical problems for a diverse clientele, and as an SME at Chegg. Saqib has over four years of experience teaching mathematics, science, and English to secondary school students, as well as in sales and merchandising roles. These experiences have enhanced his communication, writing, and pedagogy skills, as well as his ability to work with different audiences and stakeholders.
-      </p>
-      <p>
-        Beyond his academic and professional pursuits, he is an ardent writer with a keen eye for aesthetics. He enjoys exploring topics related to psychology, comparative religion, and theology, and is always eager to seize new opportunities and embrace fresh challenges with enthusiasm and curiosity.
-      </p>
-    </div>
-
+        <div>
+          <h3>Data Science Intern - Meritshot</h3>
+          <p><strong>Duration:</strong> Jan 2024 - Jul 2024</p>
+          <p><strong>Key Responsibilities:</strong></p>
+          <ul>
+            <li>Developed algorithms to enhance student performance analysis.</li>
+            <li>Created visual dashboards for data insights.</li>
+          </ul>
+        </div>
+      </div>
 
       <!-- Contact Section -->
       <div id="contact" class="content-region">
         <h2>Contact</h2>
-        <p>You can connect with me on LinkedIn and see my work.</p>
+        <p>Feel free to reach out to me for collaborations or inquiries.</p>
         <p>Email: <a href="mailto:ansarimdsaqib@gmail.com">ansarimdsaqib@gmail.com</a></p>
-        <p>Github: <a href="https://github.com/yaarasaqib" target="_blank">Github Profile</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/saqib-ansari-03a1961b4/" target="_blank">Saqib Ansari</a></p>
-        <p>Literary Blog: <a href="https://yaarasaqib.blogspot.com/" target="_blank">YaaraSaqib Blog</a></p>
-        <p>Medium Blog: <a href="https://medium.com/@yaarasaqib" target="_blank">Saqib's Medium Blog</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/yaarasaqib/" target="_blank">Instagram</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammadsaqibansari" target="_blank">linkedin.com/in/mohammadsaqibansari</a></p>
       </div>
     </div>
   </div>
@@ -283,15 +166,11 @@
   </footer>
 
   <script>
-    // JavaScript to show/hide content sections
     function showContent(sectionId) {
       const regions = document.querySelectorAll('.content-region');
       regions.forEach(region => region.classList.remove('active'));
-      
-      const activeRegion = document.getElementById(sectionId);
-      activeRegion.classList.add('active');
+      document.getElementById(sectionId).classList.add('active');
     }
   </script>
-
 </body>
 </html>
