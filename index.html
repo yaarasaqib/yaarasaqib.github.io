@@ -280,37 +280,55 @@
   </div>
 
    <!-- Work Experience -->
-    <div id="work" class="content-region">
-      <h2>Work Experience</h2>
-        <ul style="list-style: none; padding: 0;">
-          <!-- Job 1 -->
-          <li style="margin-bottom: 20px; position: relative;">
-            <strong>Associate Data Scientist</strong> - ICICI Lombard
-            <span style="position: absolute; right: 0;">(July 2024 - Present)</span>
-            <div class="description" style="display: none; margin-top: 5px;">
-              <p>In this role, I analyze complex datasets to provide actionable insights. Responsibilities include building predictive models, conducting data analysis, and collaborating with cross-functional teams to optimize business strategies.</p>
-            </div>
-          </li>
+<div id="work" class="content-region" style="font-family: 'Arial', sans-serif; max-width: 800px; margin: 0 auto; color: #333;">
+  <h2 style="text-align: center; font-size: 2em; margin-bottom: 20px;">Work Experience</h2>
+  <ul style="list-style: none; padding: 0; margin: 0;">
+    <!-- Job 1 -->
+    <li style="margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; position: relative;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <strong style="font-size: 1.2em;">Associate Data Scientist</strong>
+        <span style="font-size: 0.9em; color: #666;">(July 2024 - Present)</span>
+      </div>
+      <p style="margin: 5px 0; font-style: italic; color: #555;">ICICI Lombard General Insurance Company</p>
+      <div class="description" style="display: none; margin-top: 10px;">
+        <p style="font-size: 0.95em; line-height: 1.6;">In this role, I analyze complex datasets to provide actionable insights. Responsibilities include building predictive models, conducting data analysis, and collaborating with cross-functional teams to optimize business strategies.</p>
+      </div>
+    </li>
 
-          <!-- Job 2 -->
-          <li style="margin-bottom: 20px; position: relative;">
-            <strong>Intern Data Analyst</strong> - ABC Corporation
-            <span style="position: absolute; right: 0;">(Jan 2023 - June 2024)</span>
-            <div class="description" style="display: none; margin-top: 5px;">
-              <p>Assisted in developing dashboards and visualizations for tracking KPIs. Conducted data cleaning and exploratory analysis for business intelligence purposes.</p>
-            </div>
-          </li>
+    <!-- Job 2 -->
+    <li style="margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; position: relative;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <strong style="font-size: 1.2em;">Data Science Intern</strong>
+        <span style="font-size: 0.9em; color: #666;">(Sep 2023 - Dec 2023)</span>
+      </div>
+      <p style="margin: 5px 0; font-style: italic; color: #555;">Meritshot</p>
+      <div class="description" style="display: none; margin-top: 10px;">
+        <p style="font-size: 0.95em; line-height: 1.6;">Established a Medium blog focusing on 'Data Science in IoT,' featuring a business case study on Lenskart, a comprehensive Data Preprocessing Cheatsheet, and an exploration of Statistical Functions in R Programming, Introduction to Numpy and Pandas library.</p>
+      </div>
+    </li>
 
-          <!-- Job 3 -->
-          <li style="margin-bottom: 20px; position: relative;">
-            <strong>Research Assistant</strong> - XYZ University
-            <span style="position: absolute; right: 0;">(July 2021 - Dec 2022)</span>
-            <div class="description" style="display: none; margin-top: 5px;">
-              <p>Conducted statistical analysis on experimental data related to agricultural research. Published findings in peer-reviewed journals and presented results at international conferences.</p>
-            </div>
-          </li>
-        </ul>
-  </div>
+    <!-- Job 3 -->
+    <li style="margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9; position: relative;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <strong style="font-size: 1.2em;">Data Science Freelancer</strong>
+        <span style="font-size: 0.9em; color: #666;">(Oct 2022 - Dec 2024)</span>
+      </div>
+      <div class="description" style="display: none; margin-top: 10px;">
+        <p style="font-size: 0.95em; line-height: 1.6;">As a freelancer, I collaborated with multiple platforms and clients, including TutorBro, Way2Class, Chegg, and others, to provide comprehensive support in data science and statistics. My responsibilities included assisting students worldwide with data science and statistical problems, teaching courses, offering coding guidance, preparing video solutions, and working on diverse data science projects.</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<script>
+  // Toggle visibility of job descriptions
+  document.querySelectorAll('li').forEach(item => {
+    item.addEventListener('click', () => {
+      const description = item.querySelector('.description');
+      description.style.display = description.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+</script>
 
 <script>
   // Toggle visibility of job descriptions
