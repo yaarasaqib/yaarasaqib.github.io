@@ -10,11 +10,6 @@
       margin: 0;
       padding: 0;
       transition: background-color 0.3s, color 0.3s;
-      background: #f0f4f8;
-      color: #333;
-    }
-
-    body.dark-mode {
       background-color: #1e1e1e;
       color: #ccc;
     }
@@ -24,7 +19,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 10px 20px;
-      background-color: #007BFF;
+      background-color: #333;
       color: white;
       position: sticky;
       top: 0;
@@ -51,15 +46,6 @@
 
     .navbar a:hover {
       text-decoration: underline;
-    }
-
-    .theme-toggle {
-      background-color: white;
-      color: #007BFF;
-      border: none;
-      padding: 5px 10px;
-      border-radius: 5px;
-      cursor: pointer;
     }
 
     .container {
@@ -90,27 +76,21 @@
       border-radius: 50%;
     }
 
-    .social-icons {
+    .section-content {
+      display: none;
       margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
     }
 
-    .social-icons a {
-      font-size: 1.2rem;
-      color: #007BFF;
+    .social-footer {
+      text-align: center;
+      margin-top: 40px;
     }
 
-    body.dark-mode .navbar {
-      background-color: #333;
-    }
-    body.dark-mode .theme-toggle {
-      background-color: #444;
-      color: white;
-    }
-    body.dark-mode .social-icons a {
+    .social-footer a {
+      margin: 0 10px;
       color: #ff9800;
+      font-size: 1.5rem;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -118,17 +98,15 @@
 
   <nav class="navbar">
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#cv">CV</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" onclick="toggleSection('experience')">Experience</a></li>
+      <li><a href="#" onclick="toggleSection('cv')">CV</a></li>
+      <li><a href="#" onclick="toggleSection('contact')">Contact</a></li>
     </ul>
-    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
   </nav>
 
   <div class="container">
     <section id="about">
-      <h2>Mohammad Saqib Ansari</h2>
+      <h2 style="font-size: 1.8em;">Mohammad Saqib Ansari</h2>
       <div class="about-section">
         <div class="about-text">
           <p>My name is Mohammad Saqib Ansari. I have recently completed my tenure as an Associate Data Scientist at ICICI Lombard. I hold a Master’s in Statistics from IIT Kanpur and will soon begin my PhD in Statistics at KAUST. My work has ranged from time series forecasting and data analysis to Gen AI and chatbot systems. I am passionate about academic research and technological innovation.</p>
@@ -136,37 +114,41 @@
         <div class="about-image">
           <img src="Saqib_LinkedIn.jpg" alt="Saqib Ansari">
           <p><a href="mailto:ansarimdsaqib@gmail.com">ansarimdsaqib@gmail.com</a></p>
-          <div class="social-icons">
-            <a href="https://github.com/yaarasaqib" target="_blank">🐙</a>
-            <a href="https://www.linkedin.com/in/saqib-ansari-03a1961b4/" target="_blank">💼</a>
-            <a href="https://yaarasaqib.blogspot.com/" target="_blank">📝</a>
-            <a href="https://medium.com/@yaarasaqib" target="_blank">✍️</a>
-          </div>
         </div>
       </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="section-content">
       <h2>Experience</h2>
       <p>[You can fill in experience details here]</p>
     </section>
 
-    <section id="cv">
+    <section id="cv" class="section-content">
       <h2>CV</h2>
-      <p>[Link or embed your latest CV here]</p>
+      <p><a href="Saqib_CV.pdf" download>Download My CV</a></p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section-content">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:ansarimdsaqib@gmail.com">ansarimdsaqib@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/saqib-ansari-03a1961b4/" target="_blank">Saqib Ansari</a></p>
-      <p>GitHub: <a href="https://github.com/yaarasaqib" target="_blank">yaarasaqib</a></p>
     </section>
+
+    <div class="social-footer">
+      <a href="https://github.com/yaarasaqib" target="_blank">🐙</a>
+      <a href="https://www.linkedin.com/in/saqib-ansari-03a1961b4/" target="_blank">💼</a>
+      <a href="https://yaarasaqib.blogspot.com/" target="_blank">📝</a>
+      <a href="https://medium.com/@yaarasaqib" target="_blank">✍️</a>
+    </div>
   </div>
 
   <script>
-    function toggleTheme() {
-      document.body.classList.toggle('dark-mode');
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      if (section.style.display === 'block') {
+        section.style.display = 'none';
+      } else {
+        section.style.display = 'block';
+      }
     }
   </script>
 </body>
