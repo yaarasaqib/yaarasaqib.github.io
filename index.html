@@ -109,9 +109,20 @@
 
     .social-footer a {
       margin: 0 10px;
-      color: #ff9800;
       font-size: 1.5rem;
       text-decoration: none;
+    }
+
+    .social-footer img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
+
+    .copyright {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #bbb;
     }
   </style>
 </head>
@@ -144,21 +155,34 @@
   </div>
 
   <div class="social-footer">
-    <a href="https://github.com/yaarasaqib" target="_blank">🐙</a>
-    <a href="https://www.linkedin.com/in/saqib-ansari-03a1961b4/" target="_blank">💼</a>
+    <a href="https://github.com/yaarasaqib" target="_blank">
+      <img id="github-icon" src="Dark_Github.png" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/saqib-ansari-03a1961b4/" target="_blank">
+      <img id="linkedin-icon" src="linkedin-dark.png" alt="LinkedIn" />
+    </a>
     <a href="https://yaarasaqib.blogspot.com/" target="_blank">📝</a>
     <a href="https://medium.com/@yaarasaqib" target="_blank">✍️</a>
+    <div class="copyright">
+      &copy; 2025 Mohammad Saqib Ansari
+    </div>
   </div>
 
   <script>
     function toggleTheme() {
       const body = document.body;
+      const linkedinIcon = document.getElementById('linkedin-icon');
+      const githubIcon = document.getElementById('github-icon');
       if (body.classList.contains('dark-theme')) {
         body.classList.remove('dark-theme');
         body.classList.add('light-theme');
+        linkedinIcon.src = 'linkedin-light.png';
+        githubIcon.src = 'bright_github.png';
       } else {
         body.classList.remove('light-theme');
         body.classList.add('dark-theme');
+        linkedinIcon.src = 'linkedin-dark.png';
+        githubIcon.src = 'Dark_Github.png';
       }
     }
   </script>
