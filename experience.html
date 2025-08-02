@@ -6,41 +6,77 @@
   <title>Experience</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+  <style>
+    .experience-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+    .experience-description {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const items = document.querySelectorAll('.experience-item');
+      items.forEach(item => {
+        item.addEventListener('click', () => {
+          const description = item.querySelector('.experience-description');
+          description.style.display = description.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    });
+  </script>
 </head>
 <body class="dark">
-  <nav>
-    <ul class="nav-links">
-      <li><a href="index.html">About</a></li>
-      <li><a href="experience.html" class="active">Experience</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button id="theme-toggle">Toggle Theme</button>
-  </nav>
-
-  <main>
-    <section id="work">
-      <h1>Experience</h1>
-      <ul>
-        <li>
-          <h2>Associate Data Scientist – ICICI Lombard</h2>
-          <p><strong>Duration:</strong> July 2023 – July 2024</p>
-          <p>Worked on predictive modeling and customer behavior analytics. Developed a Premium Negotiation Bot using LLMs and APIs to adjust health insurance premiums dynamically, and a chatbot using Azure OCR and RAG to retrieve insurance policy details.</p>
-        </li>
+  <div class="container">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </section>
-  </main>
+      <button id="theme-toggle">Toggle Theme</button>
+    </nav>
 
-  <footer class="social-footer">
-    <a href="https://github.com/yaarasaqib" target="_blank">
-      <img id="github-icon" src="Dark_Github.png" alt="GitHub" />
-    </a>
-    <a href="https://www.linkedin.com/in/saqib-ansari-03a1961b4/" target="_blank">
-      <img id="linkedin-icon" src="linkedin-dark.png" alt="LinkedIn" />
-    </a>
-    <a href="https://yaarasaqib.blogspot.com/" target="_blank">📝</a>
-    <a href="https://medium.com/@yaarasaqib" target="_blank">✍️</a>
-    <div class="copyright">&copy; 2025 Mohammad Saqib Ansari</div>
-  </footer>
+    <main>
+      <section id="work">
+        <h1>Work Experience</h1>
+        <ul style="list-style: none; padding: 0;">
+          <li class="experience-item">
+            <strong>Associate Data Scientist – ICICI Lombard</strong><br>
+            <span style="font-size: 0.9em; color: #666;">July 2024 – Present | Mumbai, India</span>
+            <div class="experience-description">
+              <p>In this role, I analyze complex datasets to provide actionable insights. Responsibilities include building predictive models, conducting data analysis, and collaborating with cross-functional teams to optimize business strategies.</p>
+            </div>
+          </li>
+          <li class="experience-item">
+            <strong>Data Science Intern – Meritshot</strong><br>
+            <span style="font-size: 0.9em; color: #666;">Sep 2023 – Dec 2023 | Kanpur, India</span>
+            <div class="experience-description">
+              <p>Established a Medium blog focusing on 'Data Science in IoT,' featuring a business case study on Lenskart, a comprehensive Data Preprocessing Cheatsheet, and an exploration of Statistical Functions in R Programming, as well as an introduction to the NumPy and Pandas libraries.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="social-footer">
+      <a href="https://github.com/yaarasaqib" target="_blank">
+        <img id="github-icon" src="Dark_Github.png" alt="GitHub" />
+      </a>
+      <a href="https://www.linkedin.com/in/saqib-ansari-03a1961b4/" target="_blank">
+        <img id="linkedin-icon" src="linkedin-dark.png" alt="LinkedIn" />
+      </a>
+      <a href="https://yaarasaqib.blogspot.com/" target="_blank">📝</a>
+      <a href="https://medium.com/@yaarasaqib" target="_blank">✍️</a>
+      <div class="copyright">&copy; 2025 Mohammad Saqib Ansari</div>
+    </footer>
+  </div>
 </body>
 </html>
